@@ -1,0 +1,182 @@
+/* index.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 20%), url('baby1.gif');
+    background-position: lest;
+    background-size: cover;
+    height: 150vh;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 50px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: flex-end ;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.user-face {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+    border-radius: 50%; /* Creates a circle shape */
+    overflow: hidden; /* Ensures the image stays within the circle */
+    margin-right: 10px; /* Adjust the spacing as needed */
+}
+
+.icon {
+    width: 200px;
+    height: 70px;
+}
+
+.logo {
+    color: #7C4700;
+    font-size: 30px;
+    font-family: 'Comic Sans MS';
+}
+
+.menu {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-size: large;
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    background-color: transparent;
+    border: none;
+}
+
+button:hover {
+    color: #DDB306;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    font-size: 18px;
+    margin: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #DDB306;
+}
+
+.content {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content h1 {
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 7%;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.appointment-form {
+    width: 70%; /* Adjust as needed */
+    max-width: 400px; /* Set a max-width for larger screens */
+    background: rgba(0, 0, 0, 0.8); /* Adjust background color as needed */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto; /* Center the form */
+    color: #fff; /* Text color */
+}
+
+.appointment-form h2 {
+    font-family: 'Algerian'; /* Font family */
+    font-size: 24px; /* Font size */
+    color: #e11f27; /* Text color */
+    background-color: #362612; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Bottom margin */
+}
+
+.appointment-form input[type="text"],
+.appointment-form input[type="date"],
+.appointment-form input[type="time"],
+.appointment-form input[type="number"],
+.appointment-form input[type="submit"] {
+    width: 100%;
+    height: 40px; /* Adjust height as needed */
+    padding: 8px;
+    margin-bottom: 15px; /* Adjust spacing between inputs */
+    background: rgba(255, 255, 255, 0.1); /* Input background color */
+    border: none;
+    border-bottom: 1px solid #fff; /* Bottom border */
+    color: #fff; /* Text color */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    outline: none; /* Remove outline */
+}
+
+.appointment-form input[type="submit"] {
+    background-color: #7C4700; /* Button background color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.appointment-form input[type="submit"]:hover {
+    background-color: #3A1F04; /* Button background color on hover */
+}
+
+.appointment-form ::placeholder {
+    color: #fff; /* Placeholder text color */
+    opacity: 0.8; /* Placeholder opacity */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .appointment-form {
+        width: 90%;
+    }
+}
+
+/* Add the additional styles for the login page */
+.username {
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+}
